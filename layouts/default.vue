@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family:
     'Source Sans Pro',
@@ -34,22 +34,22 @@ html {
 .button--green {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid $color-primary-light;
+  color: $color-primary;
   text-decoration: none;
   padding: 10px 30px;
 }
 
 .button--green:hover {
   color: #fff;
-  background-color: #3b8070;
+  background-color: $color-primary;
 }
 
 .button--grey {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid $color-secondary;
+  color: $color-secondary;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
@@ -57,6 +57,6 @@ html {
 
 .button--grey:hover {
   color: #fff;
-  background-color: #35495e;
+  background-color: $color-secondary;
 }
 </style>

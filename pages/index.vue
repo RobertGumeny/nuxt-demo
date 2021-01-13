@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
       <h1 class="title">
-        nuxt-test
+        NuxtJS Demo
       </h1>
+      <h3 class="subtitle">A brief demo of Vue and NuxtJS</h3>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -31,7 +31,7 @@
 export default {}
 </script>
 
-<style>
+<style lang="scss">
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -55,14 +55,14 @@ export default {}
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: $color-secondary;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: $color-secondary-light;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
