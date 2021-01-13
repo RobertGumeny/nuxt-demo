@@ -4,7 +4,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'nuxt-test',
+    title: 'NuxtJS Demo',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,7 +16,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
+  css: [ "@/assets/scss/style.scss"
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -27,8 +27,16 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
+  buildModules: ["@nuxtjs/style-resources"
   ],
+
+  // Style Resources
+  styleResources: {
+    scss: [
+      "./assets/scss/_colors.scss",
+      "./assets/scss/_variables.scss"
+    ]
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
