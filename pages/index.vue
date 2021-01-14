@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <div class="hero">
       <h1 class="title">
         NuxtJS Demo
       </h1>
@@ -23,12 +23,15 @@
           GitHub
         </a>
       </div>
+      <div class="row">
+        <Process />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style lang="scss">
@@ -37,31 +40,27 @@ export default {}
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 25vh;
   text-align: center;
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
-  color: $color-secondary;
+  font-size: 6.5rem;
+  color: $color-primary;
   letter-spacing: 1px;
+}
+
+.row {
+  margin: 11rem 0 4rem 0;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 2.5rem;
   color: $color-secondary-light;
   word-spacing: 5px;
   padding-bottom: 15px;

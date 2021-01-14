@@ -1,6 +1,8 @@
 <template>
   <div>
+    <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -41,7 +43,7 @@ html {
 }
 
 .button--green:hover {
-  color: #fff;
+  color: $color-white;
   background-color: $color-primary;
 }
 
