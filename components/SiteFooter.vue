@@ -21,30 +21,30 @@
 
 <script>
 export default {
-  name: "footer"
-}
+  name: "siteFooter"
+};
 </script>
 
 <style lang="scss" scoped>
-  footer {
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-primary;
+  color: white;
+  padding: 1.5rem;
+
+  nav ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: $color-primary;
-    color: white;
-    padding: 1.5rem;
+    list-style: none;
 
-    nav ul {
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-
-      li a {
-        color: $color-white;
-        text-decoration: none;
-        padding: 1rem;
-        cursor: pointer;
-      }
+    li a {
+      color: $color-white;
+      text-decoration: none;
+      padding: 1rem;
+      cursor: pointer;
     }
   }
+}
 </style>

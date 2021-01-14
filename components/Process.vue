@@ -3,7 +3,11 @@
     <h1>The Patient Process</h1>
     <div class="grid-container">
       <div class="grid-item">
-        <img src="../assets/images/text-icon-1.png" alt="Text" />
+        <img
+          class="text-img"
+          src="../assets/images/text-icon-1.png"
+          alt="Text"
+        />
         <h2>Text</h2>
         <p>
           Let’s say your patient is an excellent candidate for a cataract
@@ -41,6 +45,7 @@ export default {};
 <style lang="scss" scoped>
 h1 {
   color: $color-secondary;
+  text-align: center;
   font-size: 3rem;
   font-weight: normal;
   margin-bottom: 2rem;
@@ -53,12 +58,17 @@ h1 {
 
 .grid-item {
   margin: 2rem;
+  text-align: center;
 
   h2 {
     font-weight: normal;
     font-size: 2.5rem;
     color: $color-primary;
     margin: 1rem 0;
+  }
+
+  .text-img {
+    margin-left: 2.5rem;
   }
 }
 </style>
